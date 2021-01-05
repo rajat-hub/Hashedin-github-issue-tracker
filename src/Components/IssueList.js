@@ -3,8 +3,14 @@ import IssueDisplay from './IssueDisplay'
 import axios from 'axios';
 import './IssueList.css'
 
-const IssueList=({name,issues,stars,has_issues,org})=>{
+const IssueList=(props)=>{
  
+   let name=props.location.state.name;
+   let issues=props.location.state.issues;
+   let stars=props.location.state.stars;
+   let has_issues=props.location.state.has_issues;
+   let org=props.location.state.org;
+   
     const [issuesList,setIssuesList]=useState([]);
 
     useEffect(() => {
