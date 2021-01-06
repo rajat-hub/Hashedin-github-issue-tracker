@@ -1,8 +1,9 @@
+import './IssueDisplay.css'
 
 const IssueDisplay=({Issue})=>{
-  return <div class="container">
+  return <div >
       <h2>{Issue.title}</h2>
-      <p>{Issue.number}</p>
+      <p class="issueNumber">#{Issue.number}</p>
       </div>
 }
 

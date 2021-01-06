@@ -1,9 +1,8 @@
 body{
     width:100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
 }
 
 .container{
@@ -16,4 +15,8 @@ body{
 form{
     display: flex;
     
+}
+
+input{
+    width: 30vw;
 }

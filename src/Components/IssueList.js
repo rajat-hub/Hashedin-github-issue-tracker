@@ -20,10 +20,10 @@ const IssueList=(props)=>{
           });
     });
 
-    return <div class="container">
+    return <div>
           <div class="header">
               <h2>{name}</h2>
-              <div><i class="fas fa-star"></i>{stars}</div>
+              <div class="stars"><i class="fas fa-star"></i>{stars}</div>
            </div>
            <div>
             {issuesList.map((issue)=>{
