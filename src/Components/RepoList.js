@@ -14,7 +14,7 @@ const RepoList=({ repos ,org})=> {
               stars={repo.stargazers_count}
               has_issues={repo.has_issues}
              /> */}
-              <p>{repo.name}</p>
+              <p>{repo.full_name}</p>
         </li>
         </Link>
        
